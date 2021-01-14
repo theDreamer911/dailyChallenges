@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Translate EXCL to JSON</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.3/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="text">
+        <h1>EXCL to JSON</h1>
+        <ol class="center">
+          <li>Input File</li>
+          <li>Convert</li>
+        </ol>
+      </div>
+      <div class="data">
+        <input
+          type="file"
+          id="uploadFile"
+          class="styleUp"
+          accept=".xls,.xlsx"
+        />
+        <button type="button" id="uploadExcl" class="buttons">Convert</button>
+      </div>
+      <div id="answer" class="answer">Answer Will Be Here</div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
