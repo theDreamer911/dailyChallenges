@@ -1,0 +1,8 @@
+.hidden {
+  visibility: hidden;
+  position: absolute;
+}
+
+.output {
+  top: 0;
+}
