@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <p></p>
+    <div class="container">
+      <form>
+        <div class="form-row">
+          <div class="col-md-4 md-3">
+            <label for="validationServer01">First name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="firstName"
+              placeholder="First Name"
+              value=""
+              required
+            />
+            <div class="valid-feedback">Looks Good!</div>
+            <div class="invalid-feedback">
+              Please enter 2 to 8 characters as first name
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationServer02">Last Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="lastName"
+              value=""
+              placeholder="Last Name"
+              required
+            />
+            <div class="valid-feedback">Looks Good!</div>
+            <div class="invalid-feedback">
+              Please enter 2 to 8 characters as last name
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationServerUsername">Email</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroupPrepend3">@</span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                id="email"
+                placeholder="Username"
+                aria-describedby="inputGroupPrepend3"
+                required
+              />
+              <div class="invalid-feedback">Wrong email type</div>
+              <div class="valid-feedback">Lookd Good!</div>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-3 mb-3">
+            <label for="validationServer04">Phone Numbers</label>
+            <input
+              type="text"
+              class="form-control"
+              id="phone"
+              placeholder="phone number"
+              required
+            />
+            <div class="valid-feedback">Looks Good!</div>
+            <div class="invalid-feedback">
+              Please provide a valid phone number
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationServer05">Zip</label>
+            <input
+              type="text"
+              class="form-control"
+              id="zip"
+              placeholder="Zip"
+              required
+            />
+            <div class="valid-feedback">Looks Good!</div>
+            <div class="invalid-feedback">Please provide a valid zip</div>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit Form</button>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -15,11 +15,6 @@ team = [
 
 amount = 3;
 
-// let shuffle = team
-//   .map((a) => ({ sort: Math.random(), value: a }))
-//   .sort((a, b) => a.sort - b.sort)
-//   .map((a) => a.value);
-
 let shuffle = team.sort(() => Math.random() - 0.5);
 
 function chunkArray(myArray, divider) {
