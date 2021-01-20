@@ -28,6 +28,13 @@ const motivational = [
   "Get outa here right now",
 ];
 
+const money = [
+  "Get to work ngab",
+  "Just start medium",
+  "kerja begooo",
+  "jangan males-malesan",
+];
+
 const speechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;
 const recognition = new speechRecognition();
@@ -67,6 +74,11 @@ readOutLoud = (message) => {
   if (message.includes("motivation")) {
     const finalText =
       motivational[Math.floor(Math.random() * greetings.length)];
+    speech.text = finalText;
+  }
+
+  if (message.includes("money")) {
+    const finalText = money[Math.floor(Math.random() * greetings.length)];
     speech.text = finalText;
   }
 

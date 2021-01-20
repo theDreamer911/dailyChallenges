@@ -1,0 +1,17 @@
+red
+green
+blue
+yellow
+love
+food
+street
+party
+walking
+summer
+sleep
+study
+dating
+swimming
+cleaning
+building
+run
