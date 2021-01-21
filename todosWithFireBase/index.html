@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nine</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo right">ToDo</a>
+        <ul id="nav-mobile">
+          <li class="logged-in"><a href="" id="logout">Logout</a></li>
+          <li class="logged-in" id="user-email"><li>
+          <li class="logged-out">
+            <a href="" class="modal-trigger" data-target="modal-login">Login</a>
+          </li>
+          <li class="logged-out">
+            <a
+              href=""
+              class="modal-trigger"
+              id="logout"
+              data-target="modal-signup"
+              >Sign Up</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <form action="" id="add-todo-form" class="logged-in">
+        <input type="text" name="title" placeholder="Add Task" />
+        <button class="waves-effect waves-light btn">Add Task</button>
+      </form>
+
+      <ul class="collection" id="todo-list">
+        <!-- <li class="collection-item">
+          <div>
+            <span>Buying Food</span>
+            <i class="material-icons secondary-content">delete</i>
+            <a href="#modal1" class="modal-trigger secondary-content">
+              <i class="material-icons">edit</i>
+            </a>
+          </div>
+        </li> -->
+      </ul>
+
+      <!-- EDIT-MODAL -->
+      <div id="modal-edit" class="modal">
+        <div class="modal-content">
+          <input type="text" name="newTitle" placeholder="Update Task" id="" />
+        </div>
+        <div class="modal-footer">
+          <a
+            href="#!"
+            id="update"
+            class="modal-close waves-effect waves-green btn-flat"
+            >Update</a
+          >
+        </div>
+      </div>
+    </div>
+
+      <!-- LOGIN-MODAL -->
+      <div id="modal-login" class="modal">
+        <div class="modal-content">
+          <h4>Login</h4>
+          <form action="" id="login-form">
+            <div class="input-field">
+              <input type="email" id="login-email" required />
+              <label>Email address</label>
+            </div>
+            <div class="input-field">
+              <input type="password" id="login-password" required />
+              <label>Password</label>
+            </div>
+            <p class="error pink-text center-align"></p>
+            <div class="modal-footer">
+              <button href="#!" class="waves-effect waves-green btn-flat">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+      <!-- SIGN-UP-MODAL -->
+      <div id="modal-signup" class="modal">
+        <div class="modal-content">
+          <h4>Sign Up</h4>
+          <form action="" id="signup-form">
+            <div class="input-field">
+              <input type="email" id="signup-email" required />
+              <label>Email address</label>
+            </div>
+            <div class="input-field">
+              <input type="password" id="signup-password" required />
+              <label>Password</label>
+            </div>
+            <p class="error pink-text center-align"></p>
+            <div class="modal-footer">
+              <button href="#!" class="waves-effect waves-green btn-flat">Sign Up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".modal");
+        var instances = M.Modal.init(elems);
+      });
+      var firebaseConfig = {
+        apiKey: "AIzaSyAjRdj_cJmoa8avR1126KeaY31S89pe-DE",
+        authDomain: "todolist-20f50.firebaseapp.com",
+        projectId: "todolist-20f50",
+        storageBucket: "todolist-20f50.appspot.com",
+        messagingSenderId: "863237841856",
+        appId: "1:863237841856:web:49b5de3e6ff8eedd0d5e25",
+      };
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+      const auth = firebase.auth();
+    </script>
+    <script src="auth.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
