@@ -13,7 +13,7 @@ body {
     #ff3033 33%,
     #ff282c 67%,
     #2989d8 67%,
-    #7db9e8 100%
+    #2989d8 100%
   );
 }
 
@@ -51,5 +51,11 @@ body {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  margin: 35vh auto;
+  height: 75vh;
+  align-items: center;
+}
+
+.colorize .color {
+  background-color: transparent;
+  padding: 98px;
 }
