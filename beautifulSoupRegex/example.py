@@ -1,0 +1,26 @@
+from bs4 import BeautifulSoup
+import re
+
+allpre = """[<title>Hackazon  — test_user:7d4a69db92c867d9b0060653c44733bf:108853d9fae39d4bb
+,admin:7d4a69db92c867d9b0060653c44733bf:108853d9fae39d4bb
+,bigadmin:2fc4960b1c451c2177fefd7110c7f425:424118975601baa7cee90e
+,newgans:acdbb2c59595c8d072328a83be3ffa52:300987962602370541cced
+,adtyaa:aabff93891a2226928c720556a867946:10779994296023d466eeb3b
+,testya:132d794eb8fbc905a4fe571e6c716dea:1467175108602678c734470
+,jamesWatch:eaf9cf5662f79402aa0ea307fc60d356:9745695256026858d84001
+,sigid08:5a78d4dd9bdce89ded704c6dbadb0cb4:199254641060268a750e685
+,nash:732b7e5d6330546ac6d7e7222e7de5b2:213220258360268cbf16979
+,Emha:9a0a5a170338c1f7fc03797b5c739d2e:23280840060268ee4c8deb
+,jean:bfecf60316e2fb543f394f9fc0128a9a:123904869760269336de1af
+,candra:5ae4e5c395b38007f0f07a03a1145ce2:14278474286026975b6a801
+,yudha:1f953660b7ce4a1c778c42d64b72f456:229851143602698716537d
+,lampard:c0b436e9970251df32c663579c1f968e:9177585546026a04db171f
+,anton:b9cf62fa7ea9c8a2cbc7f1891eb821e5:3029214756026a0dee2cfb
+,belle:45f0f</title>]"""
+
+clean2 = BeautifulSoup(allpre, 'lxml')
+database = clean2.get_text()
+cleanIt = re.sub('Hackazon  — ', '', database).strip('[]').split(',')
+
+for index, user in enumerate(cleanIt):
+    print(f"{index+1}. {user}")
