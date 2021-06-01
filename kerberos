@@ -1,17 +1,17 @@
-<mxfile host="app.diagrams.net" modified="2021-06-01T14:23:34.425Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="wZ3UgITSkwM0eIC45T3y" version="14.4.2" type="github">
+<mxfile host="app.diagrams.net" modified="2021-06-01T14:26:29.331Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="BEjxhnniDBZpR2296v-S" version="14.4.2" type="github">
   <diagram name="Page-1" id="e3a06f82-3646-2815-327d-82caf3d4e204">
-    <mxGraphModel dx="1185" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
+    <mxGraphModel dx="981" dy="508" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" style=";html=1;" />
         <mxCell id="1" style=";html=1;" parent="0" />
         <mxCell id="Fqu3hPYNAP40jYDoLHFM-12" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Garamond;fontSize=14;fillColor=none;rotation=-30;" vertex="1" parent="1">
           <mxGeometry x="548.17" y="323.17" width="60" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6a7d8f32e03d9370-61" value="Kerberos" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;fontSize=14;strokeColor=#d6b656;verticalAlign=top;" parent="1" vertex="1">
-          <mxGeometry x="870" y="130" width="450.5" height="400" as="geometry" />
+        <mxCell id="6a7d8f32e03d9370-61" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 26px&quot;&gt;&lt;b&gt;Kerberos&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;fontSize=14;strokeColor=#d6b656;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="870" y="120" width="450.5" height="410" as="geometry" />
         </mxCell>
-        <mxCell id="6a7d8f32e03d9370-60" value="Server" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;fontSize=14;strokeColor=none;verticalAlign=top;" parent="1" vertex="1">
-          <mxGeometry x="870" y="610" width="250" height="210" as="geometry" />
+        <mxCell id="6a7d8f32e03d9370-60" value="&lt;font size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 26px&quot;&gt;Server&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;fontSize=14;strokeColor=none;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="870" y="590" width="250" height="230" as="geometry" />
         </mxCell>
         <mxCell id="6a7d8f32e03d9370-56" style="edgeStyle=none;rounded=0;html=1;startSize=6;endSize=6;jettySize=auto;orthogonalLoop=1;fontSize=14;endArrow=block;endFill=1;strokeWidth=1;exitX=0.552;exitY=0.845;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="6a7d8f32e03d9370-1" target="6a7d8f32e03d9370-25" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -43,8 +43,8 @@
         <mxCell id="6a7d8f32e03d9370-25" value="Ticket-Granting-Server (TGS)" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;shape=mxgraph.citrix.proxy_server;fillColor=#66B2FF;gradientColor=#0066CC;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="1004.5" y="380" width="76.5" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="6a7d8f32e03d9370-62" value="Citrix Network Architecture" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
-          <mxGeometry x="461.5" y="20" width="861" height="40" as="geometry" />
+        <mxCell id="6a7d8f32e03d9370-62" value="&lt;font style=&quot;font-size: 48px&quot;&gt;Kerberos Server&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="390" y="120" width="390" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Fqu3hPYNAP40jYDoLHFM-6" value="Provide server authenticator" style="endArrow=block;html=1;exitX=-0.022;exitY=0.368;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.582;entryY=1.027;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Garamond;fontSize=14;endFill=1;" edge="1" parent="1" source="6a7d8f32e03d9370-15" target="6a7d8f32e03d9370-1">
           <mxGeometry x="0.1544" width="50" height="50" relative="1" as="geometry">
@@ -69,8 +69,8 @@
         <mxCell id="6a7d8f32e03d9370-1" value="&lt;font face=&quot;Garamond&quot;&gt;Client&lt;/font&gt;" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;shape=mxgraph.citrix.laptop_2;fillColor=#66B2FF;gradientColor=#0066CC;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="389.9999999999999" y="360" width="116" height="86.5" as="geometry" />
         </mxCell>
-        <mxCell id="6a7d8f32e03d9370-15" value="Web Server" style="verticalLabelPosition=top;aspect=fixed;html=1;verticalAlign=bottom;strokeColor=none;shape=mxgraph.citrix.cache_server;fillColor=#66B2FF;gradientColor=#0066CC;fontSize=14;labelPosition=center;align=center;" parent="1" vertex="1">
-          <mxGeometry x="955.75" y="681.25" width="71" height="97.5" as="geometry" />
+        <mxCell id="6a7d8f32e03d9370-15" value="Host / Application &lt;br&gt;server&lt;br&gt;" style="verticalLabelPosition=top;aspect=fixed;html=1;verticalAlign=bottom;strokeColor=none;shape=mxgraph.citrix.cache_server;fillColor=#66B2FF;gradientColor=#0066CC;fontSize=14;labelPosition=center;align=center;" parent="1" vertex="1">
+          <mxGeometry x="960" y="687.09" width="66.75" height="91.66" as="geometry" />
         </mxCell>
         <mxCell id="Fqu3hPYNAP40jYDoLHFM-17" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontFamily=Garamond;fontSize=14;fillColor=none;rotation=-30;" vertex="1" parent="1">
           <mxGeometry x="590" y="403.66" width="66.34" height="66.34" as="geometry" />
