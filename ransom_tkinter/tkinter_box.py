@@ -20,7 +20,7 @@ images = Image.open("trace.png")
 # img = image.resize((300,200))
 
 canvas.pack(fill = BOTH, expand = True)
-resized_image = images.resize((200,60), Image.ANTIALIAS)
+resized_image = images.resize((200,60), Image.Resampling.LANCZOS)
 photo = ImageTk.PhotoImage(resized_image)
 canvas.create_image(210, 65, anchor="se", image=photo)
 canvas.create_text(265, 110, text = 'Trace-Ransomware', font = ('Helvetica', 36, 'bold'), justify = 'center', fill='black')
